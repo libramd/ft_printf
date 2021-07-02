@@ -6,7 +6,7 @@
 /*   By: mdiakhat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/16 15:32:32 by mdiakhat          #+#    #+#             */
-/*   Updated: 2021/06/28 16:48:44 by mdiakhat         ###   ########.fr       */
+/*   Updated: 2021/07/02 14:20:03 by mdiakhat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,4 +51,15 @@ void	ft_poulet(t_bloc *s, const char *str, va_list ap)
 	conv = ft_copy_conv(str);
 	set_arg(conv, s, ap);
 	free(conv);
+}
+
+int	ft_strlen_b(const char *str, int precision)
+{
+	if ((precision != -1) && (precision < ft_strlen(str)))
+		return (precision);
+	else if ((precision != -1) && (precision >= ft_strlen(str)))
+		return (ft_strlen(str));
+	else if (precision == -1)
+		return (ft_strlen(str));
+	return (1);
 }

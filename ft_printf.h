@@ -6,7 +6,7 @@
 /*   By: mdiakhat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/26 15:36:14 by mdiakhat          #+#    #+#             */
-/*   Updated: 2021/06/28 17:13:29 by mdiakhat         ###   ########.fr       */
+/*   Updated: 2021/07/02 15:38:15 by mdiakhat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ typedef struct	s_bloc
 	int		precision;
 }				t_bloc;
 
+int				ft_strlen_b(const char *str, int precision);
 void			ft_poulet(t_bloc *s, const char *str, va_list ap);
 void			ft_free_str(char *str);
 void			*ft_memset(void *pointer, int value, size_t size);
@@ -66,7 +67,7 @@ void			set_arg_zero(t_bloc *s);
 int				ft_printf(const char *str, ...);
 int				ft_strlen(const char *str);
 void			ft_putchar(char c, int *count);
-void			ft_putstr(char *str, int *count);
+void			ft_putstr(const char *str, int *count);
 void			ft_putnbr(int nb, int *count);
 
 #endif

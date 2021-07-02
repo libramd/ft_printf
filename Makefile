@@ -6,7 +6,7 @@
 #    By: mdiakhat <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/26 15:52:10 by mdiakhat          #+#    #+#              #
-#    Updated: 2021/06/16 17:16:31 by mdiakhat         ###   ########.fr        #
+#    Updated: 2021/07/02 13:52:20 by mdiakhat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,17 +23,11 @@ NAME = libftprintf.a
 SRC = 	ft_printf.c\
 		conv_c.c\
 		conv_d.c\
-		conv_d2.c\
 		conv_p.c\
-		conv_p2.c\
 		conv_s.c\
-		conv_s2.c\
 		conv_u.c\
-		conv_u2.c\
 		conv_x.c\
-		conv_x2.c\
 		conv_xup.c\
-		conv_xup2.c\
 		ft_printf_utils.c\
 		ft_printf_utils2.c\
 		ft_printf_utils3.c\

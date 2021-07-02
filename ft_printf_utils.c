@@ -6,7 +6,7 @@
 /*   By: mdiakhat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/26 15:45:54 by mdiakhat          #+#    #+#             */
-/*   Updated: 2021/06/20 21:33:13 by mdiakhat         ###   ########.fr       */
+/*   Updated: 2021/07/02 13:56:18 by mdiakhat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	ft_putchar(char c, int *count)
 	*count = *count + 1;
 }
 
-void	ft_putstr(char *str, int *count)
+void	ft_putstr(const char *str, int *count)
 {
 	int	i;
 
